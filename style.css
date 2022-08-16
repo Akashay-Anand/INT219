@@ -3,3 +3,13 @@
     /* position: relative; */
     text-align: center;
 }
+table, th, td{
+    border: 9px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    background-color: aqua;
+}
+/* tr:nth-child(even){
+    background-color: azure;
+} */
