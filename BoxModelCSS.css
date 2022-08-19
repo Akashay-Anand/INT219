@@ -13,10 +13,9 @@ h1{
     border-radius: 5em;
 }
 .boxstyle{
+    background: yellow;
     size: 100px;
     border: green 5px solid;
     border-radius: 50%;
     color: orange;
-    width: 50px;
-    height: 50px;
 }
