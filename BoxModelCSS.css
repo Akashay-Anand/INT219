@@ -10,4 +10,13 @@ h1{
     border: red 5px dotted;
     margin: 10px;
     padding: 10px;
+    border-radius: 5em;
+}
+.boxstyle{
+    size: 100px;
+    border: green 5px solid;
+    border-radius: 50%;
+    color: orange;
+    width: 50px;
+    height: 50px;
 }
