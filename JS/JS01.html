@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Script basics -->
+    <!-- JavaScript can be use to change content of page -->
+    <h1 id="text1">Hello Anand</h1>
+    <input type="button" value="btn_value" name="bht_name" onclick='document.getElementById("text1").innerHTML = "Hello Input"'>
+    <button onclick='document.getElementById("text1").innerHTML = "Hello button"' >Click Me</button>
+    <button type="button" onclick='document.getElementById("text1").innerHTML = "Hello JS"'>Click Me</button>
+    
+    <script>
+        document.getElementById("text1").style.fontSize="40px";
+        document.getElementById("text1").style.color="red";
+    </script>
+
+    <hr><br><br>
+
+    <!-- We can use functions for any task -->
+    <h1 id="text2">Function in JS</h1>
+    <button onclick="myFunction()" >Click Me</button>
+    <script>
+        function myFunction(){
+            document.getElementById("text2").innerHTML = "text changed"
+            document.getElementById("text2").style.color="Blue"
+            window.alert("Hello");
+            alert("Anand"); // 'window' object is optional; [Note-1];
+            
+            
+        }
+    </script>
+
+    <hr><br><br>
+
+
+</body>
+</html>
+
+<!-- 
+
+    [Note-1]: n JavaScript, the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional
+
+
+
+
+ -->
