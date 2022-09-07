@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+//First Interactive Game
+let PlayGame = confirm("Shall we Play rock, paper , scissors?")
+if(PlayGame)
+{
+// play
+let playerChoice = prompt("please enter rock, paper, scissors.")
+if (playerChoice){
+let playerOne = playerChoice.trim().toLowerCase();
+if(
+playerOne === "rock" ||
+playerOne === "paper" ||
+playerOne === "scissors"
+) {
+let computerChoice = Math.floor(Math.random()*3+1);
+let computer =
+computerChoice ===1 ? "rock"
+: computerChoice === 2 ? "paper"
+: "scissors";
+let result =
+playerOne === computer ? "Tie game!"
+:playerOne === "rock" && computer === "paper"
+? 'Computer wins!'
+:playerOne === "paper" && computer === "scisssors"
+? 'Computer wins!'
+:playerOne === "scissors" && computer === "rock"
+? 'Computer wins!'
+:' playerOne wins!';
+alert(result);
+} else {
+alert("You did not enter rock paper or scissors.");
+}
+} else{
+alert("I guess you changed your mind.Maybe next time");
+}
+}
+else {
+alert("Ok, Maybe next time.");
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let playerChoice, computerChoice;
+        let flag = confirm("Can we Play Rock, Paper, scissors?");
+        
+        let x = Math.floor(Math.random()*3);
+        if(x == 0) computerChoice = "rock";
+        else if(x == 1) computerChoice = "paper";
+        else computerChoice = "scissors";
+        
+        if(flag){
+            playerChoice = prompt("Select one from..(Rock, Paper, scissors)");
+            playerChoice = playerChoice.trim().toLowerCase();
+            if(playerChoice == "rock" || playerChoice == "paper" || playerChoice == "scissors"){
+                if(playerChoice == computerChoice) window.alert("No one wins");
+                else if((playerChoice == "rock" && computerChoice == "scissors") || (playerChoice == "paper" && computerChoice == "rock") || (playerChoice == "scissors" && computerChoice == "paper")
+                ) alert("computer = " + computerChoice + " & " + "Your = " + playerChoice + " ..You have won this game");
+                
+                else alert("computer = " + computerChoice + " & " + "Your = " + playerChoice + " ..You lost");
+            }else{
+                alert("Entered data is Invalid");
+            }
+        }else{
+            alert("We will plyay next time");
+        }
+
+
+
+
+    </script>
+</body>
+</html>

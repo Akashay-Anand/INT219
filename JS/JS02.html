@@ -8,16 +8,45 @@
 <body>
 
     <script>
+        console.log("'hello JS'")
+        document.write("hello World!..\n") ; // '\n' is not working?
+        x = 5
+        var y = 6;
+        let z = 7
+        document.write(x+y+"aaa"+z);
+        // document.write(typeof y);
+    </script>
+    <br><br>
+<!-- JS - Dialog Boxes  -->
+
+    <script> 
+        // alert box 
+        window.alert("It's an alert box");
+        alert("Another alert box without window object");
+
+        // Confirmation Dialog Box
+        var flag = confirm("confirmation box, value return will be 'true' or 'false' ");
+        document.write("flag = ", flag);
+
+        // Prompt Dialog Box
+        var data = prompt("Enter your name:","Your Name");
+        document.write("   Name: ",data);
 
     </script>
+
     
 </body>
 </html>
 <!-- 
+# semicolon is not compulsary;
+# 'var' , 'let' , 'const'
+
 JavaScript can "display" data in different ways:
  
 > Writing into an HTML element, using   innerHTML.
 > Writing into the HTML output using   document.write().
 > Writing into an alert box, using   window.alert().
 > Writing into the browser console, using   console.log().
+
+    [Note-1]: n JavaScript, the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional
  -->

@@ -9,7 +9,7 @@
     <!-- Script basics -->
     <!-- JavaScript can be use to change content of page -->
     <h1 id="text1">Hello Anand</h1>
-    <input type="button" value="btn_value" name="bht_name" onclick='document.getElementById("text1").innerHTML = "Hello Input"'>
+    <input type="submit" value="btn_value" name="bht_name" onclick='document.getElementById("text1").innerHTML = "Hello Input"'>
     <button onclick='document.getElementById("text1").innerHTML = "Hello button"' >Click Me</button>
     <button type="button" onclick='document.getElementById("text1").innerHTML = "Hello JS"'>Click Me</button>
     
@@ -28,7 +28,7 @@
             document.getElementById("text2").innerHTML = "text changed"
             document.getElementById("text2").style.color="Blue"
             window.alert("Hello");
-            alert("Anand"); // 'window' object is optional; [Note-1];
+            alert("Anand " + (2+3)); // 'window' object is optional; [Note-1];
             
             
         }

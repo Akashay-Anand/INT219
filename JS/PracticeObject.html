@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+const myObj ={ name:"ha rsh"};
+document.write(myObj.name);
+document.write("<br>");
+const myObj1 ={
+name:"harsh",
+present:true,
+hobbies:["Eat","sleep","code"],
+beverage:{morning:"Tea",
+afternoon:"coffee"},
+grade:function(){
+return "A";
+}
+
+};
+document.write(myObj1.beverage.afternoon);
+document.write("<br>");
+document.write(myObj1.grade());
+document.write("<br>");
+document.write(myObj1.hobbies[1]);
+
+// Another object with inheritance
+const vehicle={
+wheels:4,
+engine:function(){
+return "diesel Engine";
+}
+};
+const truck=Object.create(vehicle);
+truck.doors=2;
+document.write("<br>");
+document.write(truck.wheels);
+document.write("<br>");
+document.write(truck.doors);
+document.write("<br>");
+document.write(truck.engine());
+const car=Object.create(vehicle);
+car.doors=4;
+car.engine=function(){
+return "Woooshhhh";
+}
+document.write("<br>");
+document.write(car.engine());
+document.write("<br>");
+const tesla=Object.create(car);
+document.write(tesla.wheels);
+document.write("<br>");
+document.write(tesla.engine());
+document.write("<br>");
+tesla.engine=function(){
+return "Shhhh";
+}
+document.write(tesla.engine());
+
+</script>
+</body>
+</html>
