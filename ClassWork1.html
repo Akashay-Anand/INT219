@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            // $('tr').css({'background-color' : 'red'});
+            $('table tr:even').css({'background-color' : 'red'});
+            $('table tr:odd').css({'background-color' : 'green'});
+        });
+    });
+    $().ready(function(){
+        // select all the element with class 'smoll' that are nested in the element with id 'div2'. and set 5px solid red border
+    });
+</script>
+
+</head>
+<body>
+    
+    <button class="btn" onclick="">Click me</button>
+    <table >
+        <tr >
+            <td>Hello</td>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+        <tr class="tr1">
+            <td>Hello</td>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+        <tr class="tr1">
+            <td>Hello</td>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+        <tr class="tr1">
+            <td>Hello</td>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+        <tr class="tr1">
+            <td>Hello</td>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

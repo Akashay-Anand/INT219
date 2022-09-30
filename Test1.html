@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Image toggle</title>
+    <style>
+        table, tr, td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+   
+    <!-- With JS -->
+    <table>
+        <tr>
+            <td>1</td>
+            <td colspan="3" rowspan="3"><img src="" alt="" id="imgbox" width="200px" height="200px"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td onclick="img1()">Image 1</td>
+            <td onclick="img2()">Image 2</td>
+            <td onclick="img3()">Image 3</td>
+        </tr>
+    </table>
+    <script>
+        function img1(){
+            document.getElementById("imgbox").src="logo2.png";
+        }
+        function img2(){
+            document.getElementById("imgbox").src="background2.png";
+        }
+        function img3(){
+            document.getElementById("imgbox").src="Background1.png";
+        }
+    </script>
+
+</body>
+</html>
+
+    <!-- Task 1 -->
+    <!-- <script>
+        let marks = prompt("What's your marks");
+        if(marks>=70 && marks<=100) alert("Distinction");
+        else if(marks>=60 && marks<70) alert("First Class");
+        else if(marks>=40 && marks<60) alert("second class");
+        else alert("Either marks is rong or you are Fail")
+    </script> -->
+
+ <!-- Task 2  -->
+    <!-- With I frame -->
+    <!-- <table>
+        <tr>
+            <td>1</td>
+            <td colspan="3" rowspan="3"><iframe src="" name="i_frame" frameborder="0" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a href="lpuLogo.png" target="i_frame">Image 1</a></td>
+            <td><a href="background2.png" target="i_frame">Image 2</a></td>
+            <td><a href="Background1.png" target="i_frame">Image 3</a></td>
+        </tr>
+    </table> -->

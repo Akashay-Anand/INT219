@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Lifecycle" onclick="Displayimg()">
+    <input type="button" value="Stop slideshow" onclick="details()">
+    <img id="dimg" src="" alt="" width="200px" height="200px">
+    <p id="de"></p>
+
+    <script>
+        var flag = 1;
+
+        function details(){
+            if(flag == 1) document.getElementById("de").innerHTML="Img 1"
+            if(flag == 2) document.getElementById("de").innerHTML="Img 2"
+            if(flag == 3) document.getElementById("de").innerHTML="Img 3"
+            if(flag == 4) document.getElementById("de").innerHTML="Img 4"
+            if(flag==4 ) flag -1;
+        }
+
+        function Displayimg(){
+            if(flag == 1) document.getElementById("dimg").src="1.jpg"
+            if(flag == 2) document.getElementById("dimg").src="2.png"
+            if(flag == 3) document.getElementById("dimg").src="3.png"
+            if(flag == 4) document.getElementById("dimg").src="4.png"
+            if(flag==4) flag = 1;
+            flag++;
+            setInterval(Displayimg,2000);
+        }
+    </script>
+</body>
+</html>

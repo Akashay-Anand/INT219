@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <script>
+        function Update_Date() {
+            setTimeout('show_Date()',1000);
+        }
+        function show_Date() {
+            document.getElementById("date1").innerHTML = Date();
+            Update_Date();
+        }
+    </script>
+</head>
+<body >
+    <!-- Task 1 "date time " -->
+    <h1 id="date1"></h1>
+    <!-- <h1 id="ct"></h1> -->
+    <button onclick="show_Date()">Click me</button>
+
+    <!-- <script>
+        var check = 0;
+        function myDate(){
+            if(check == 0){
+                document.getElementById("date1").style.display="block";
+                document.getElementById("date1").innerHTML = Date() ;
+                check = 1;
+            }
+            else{
+                check = 0;
+                document.getElementById("date1").style.display="none";
+            }
+        }
+    </script> -->
+
+
+<hr>
+<br>
+    <!-- Task 2 -->
+    <table>
+        <tr>
+            <td onclick="myName()"> Akashay Anand </td>
+            <td id="td1"> </td>
+        </tr>
+    </table>
+    <script>
+        function myName(){
+            document.getElementById("td1").innerHTML = "age = 20" + "Phone = 123456789";
+        }
+    </script>
+
+
+</body>
+</html>

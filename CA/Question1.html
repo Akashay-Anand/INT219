@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+        }
+        input{
+            position: absolute;
+            right: 0;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="get">
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="f1"> <br>
+
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="f2"><br>
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="f3"><br>
+
+            <label for="repassword">RePassword: </label>
+            <input type="password" name="repassword" id="f4"><br>
+
+            <label for="address">Address: </label>
+            <input type="text" name="address" id="f5"><br>
+
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="f6"><br>
+            
+            <label for="gender">Gender: </label>
+            <select name="gen">
+                <option value="Male">Male</option>
+                <option value="Femail">Femail</option>
+            </select>
+            <input type="submit" value="data" onclick="Takedata()">
+        </form>
+    </div>
+    <script>
+        function Takedata(){
+            var user = document.getElementById("f2").get
+            alert(user,)
+        }
+    </script>
+</body>
+</html>

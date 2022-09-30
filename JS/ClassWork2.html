@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>QUES 3</title>
+<style>
+#dispCrs{
+width: 300px;
+border: 2px solid black;
+padding: 30px;
+}
+#dispReg{
+width: 100px;
+border: 1px solid black;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<label type="text" id="name">Anand</label>
+<label type="text" id="RegNo">12020692</label>
+<label type="text" id="CourseName">INT219</label>
+<div id="dispCrs" onclick="alert(document.getElementById('CourseName').innerText)">
+<p id="dispReg" onclick="alert(document.getElementById('RegNo').innerText)">
+<input type="button" value="Submit" id="btnSubmit" onclick="alert(document.getElementById('name').innerText)"></input>
+</p>
+</div>
+</body>
+</html>

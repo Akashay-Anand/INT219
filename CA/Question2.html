@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body id="bod" onload="setColor()">
+    <button onclick="stopColor()">Stop Toggling</button>
+    
+    <script>
+        /*Write your code*/
+        var flag = 0;
+        setInterval(setColor,3000);
+        function setColor() {
+            /* write your code*/
+            if(flag == 0){
+                document.getElementById("bod").style.backgroundColor="yellow"; 
+                flag = 1;
+            }
+            else if( flag == 1){
+                flag = 0;
+                document.getElementById("bod").style.backgroundColor="pink"; 
+            }
+        }
+        function stopColor() {
+            /* write your code*/
+            flag = -1;
+            document.getElementById("bod").style.backgroundColor="white"; 
+        }
+    </script>
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
